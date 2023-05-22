@@ -300,3 +300,49 @@ chattr +a pasta # Add apend ao arquivo / não permite remoção de arquivos da p
 chattr =aie * # Add imutavél, append e extend aos arquivos
 chattr +c arquivos # Add salvamento compactado
 ```
+
+### cut
+
+```bash
+cut -d ":" -f 1 /etc/passwd # Pega o primeiro campo usando o ":" como delimitador
+cut -d ":" -f 1,7 /etc/passwd # Pega o primeiro e o setimo campo usando o ":" como delimitador
+```
+
+### cmp e diff
+Comparador de arquivos
+
+```bash
+cmp arquivo_1 arquivo_2 # Mostra se existem diferenças em bytes
+diff arquivo_1 arquivo_2 # Mostra as linhas diferentes no arquivo
+diff -u arquivo_1 arquivo_2 # Mostra as linhas diferentes no arquivo
+diff -ru pasta_1 pasta_2 # Mostra as diferenças em pastas
+```
+
+### diff + patch
+
+
+### Segundo plano
+
+Executar comando em segundo plano utilizar & após o comando
+```bash
+sleep 10 &
+jobs # mostra o que esta funcionando
+fg 1 # Traz o processo 1 para primeiro plano
+
+# Para jogar um programa rodando para segundo plano segurar CTRL + z, executar comando: 
+bg 1
+
+# Para finalizar um processo de segundo plano pode-se trazer para primeiro plano e CTRL + c, ou:
+jobs # mostra os processos em segundo plano
+kill %3 # encerra o processo 3
+```
+
+## Ececutar comandos de maneira sequencial 
+Utilizar entre os comandos ";"
+
+```bash
+apt update ; apt upgrade -y ; echo "Finalizado"Boa
+```
+
+
+
