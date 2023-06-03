@@ -308,3 +308,35 @@ user = os.environ.get('USUARIO')
 var1 = os.environ.get('var1')
 var2 = os.environ.get('var2')
 ```
+
+## POO
+
+Criar classe
+```python
+class Celular:
+    marca = 'Nokia'
+    modelo = 'Tijoão'
+    cor = 'Azul'
+    tem_camera = False
+    bateria = 'Infinita'
+
+    def fazer_ligações(self):
+        print('Fazendo ligação...')
+
+    def jogar_cobrinha(self):
+        print('Jogando cobrinha...')
+    
+    def despertador(self):
+        print('Despertando...')
+
+    def calcular(self, v1, v2):
+        return v1 + v2
+
+celular = Celular()
+
+print(celular.marca) #$ 'Nokia'
+
+celular.depertador() #$ 'Despertando...'
+
+print(celular.calcular(2, 4))
+```
