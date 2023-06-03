@@ -199,4 +199,112 @@ while numero < 5:
     print(numero)
     numero += 1
 ```
+## Estrutura de dados
 
+### Listas
+```python
+carros = [] # inicia lista vazia
+carros.append('Marea') # Adiciona elemento 
+carros.append('Fusca') # Adiciona elemento no fim da lista
+
+carros = ['Marea', 'Fusca'] # inicia lista com valores
+carros.insert(1, 'Escort') # Adiciona o elemento no indice 1
+
+carros.pop() # Remove o ultimo elemento
+del carros[1] # Remove o indice 1
+carros.remove('Fusca') # Remove o valor do elemento
+
+carros.count('Fusca') # Mostra o somatório de ocorrências do valor
+carros.reverse() # Inverte a ordem
+carros.sort() # Ordena os valores 
+```
+
+### Compreensão de listas
+
+```python
+# Sem compreensão
+numeros = [1, 2, 3, 4, 5]
+numeros_dobrados = []
+for numero in numeros:
+    numeros_dobrados.append(numero * 2)
+print(numeros_dobrados)
+
+# Com compreensão
+numeros = [1, 2, 3, 4, 5]
+numeros_dobrados = [numero * 2 for numero in numeros] # [ expressão for item in lista ]
+print(numeros_dobrados)
+# Com compreensão e funcao
+numeros = [1, 2, 3, 4, 5]
+
+def dobro(numero):
+    return numero *2
+
+numeros_dobrados = [dobro(numero) for numero in numeros] # [ expressão for item in lista ]
+print(numeros_dobrados)
+
+# Outro exemplo
+nomes = [ 'Tiago', 'Carol', 'Leonardo' ]
+nomes_maiusculos = [nome.upper() for nome in nomes]
+
+print(nomes_maiusculos)
+
+nomes = [ 'Tiago', 'Carol', 'Leonardo' ]
+nomes_maiusculos = [nome.upper() for nome in nomes if nome[0] == 'A'] # [ expressão for item in lista condição ]
+
+print(nomes_maiusculos)
+```
+
+### Dicionário 
+Em Ruby Hash
+
+```python
+meu_dicio = {} # Inicia dicionário vazio
+meu_dicio = {'nome': 'Tiago', 'idade': 36, 'profissao': 'DevOps'}
+meu_dicio['profissao'] #$ 'DevOps'
+meu_dicio.get('nome') #$ 'Tiago' 
+meu_dicio.pop('idade') # Remove elemento do dicionario
+meu_dicio.keys() # Mostra as chaves
+meu_dicio.values() # Mostra os valores
+meu_dicio.clear() # Limpa o dicionário
+
+pessoa = {
+    'nome': 'Tiago',
+    'idade': 36,
+    'profissao': 'DevOps',
+    'interesses': ['Python', 'Programação'],
+    'pet': { 
+        'nome': 'Loki',
+        'idade': 3,
+        'peso': '2kg'
+    }
+}
+pessoa['interesses'][0] #$ 'Python'
+pessoa.get('interesses')[0] #$ 'Python'
+pessoa['pet']['nome'] #$ 'Loki'
+pessoa.get('pet').get('nome') #$ 'Loki' 
+
+pessoa['ano_nascimento'] = 1987 # Adiciona elemento novo ao dicionário
+```
+
+## Variaveis de ambiente
+
+Variaveis do ambiente / PC / Container
+```bash
+export MINHA_VARIAVEL=valor #em linux
+```
+```powershell
+set MINHA_VARIAVEL valor #em windows
+```
+
+```bash
+export var1='123'
+export var2='456'
+export USUARIO='tiago'
+```
+```python
+import os
+
+user = os.environ.get('USUARIO')
+var1 = os.environ.get('var1')
+var2 = os.environ.get('var2')
+```

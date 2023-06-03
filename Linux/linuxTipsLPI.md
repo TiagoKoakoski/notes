@@ -337,11 +337,11 @@ jobs # mostra os processos em segundo plano
 kill %3 # encerra o processo 3
 ```
 
-## Ececutar comandos de maneira sequencial 
+## Executar comandos de maneira sequencial 
 Utilizar entre os comandos ";"
 
 ```bash
-apt update ; apt upgrade -y ; echo "Finalizado"Boa
+apt update ; apt upgrade -y ; echo "Finalizado"
 ```
 
 
