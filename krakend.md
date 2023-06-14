@@ -1,0 +1,5 @@
+Site da KrakenD: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqblBNR0VOVzUyNUJ5QVA0OGYzYjEzeVYtcnE1UXxBQ3Jtc0tsdEdYR1NLMFZhdEVZNDRQNnVLMFpMM01lamg2OWFJRzFGLUtXLWJ4am9IUXpEUlNrZWdGOWJqX0JVS1lGd0ZPQjg0REwwQnZGVmdTSWZzcEV1d2hiYjJFbTZnVDlCaFBYcWdUczUtQ1F6RGpYOWJPTQ&q=https%3A%2F%2Fwww.krakend.io%2Fopen-source%2F&v=ni-rti5DgYY
+Playground: https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbHU3dF94b3d1OUc1V09Ec2JxOW5HaEowTFlPd3xBQ3Jtc0trNDFTODJfR1h2bHRWWUtEUjd4OTI1YkNLTGFyZnlnR1A3Y0NQdi1raDExOW9CbjdKVjdwUVEyekNEVGRna2pmSkJ6b2VEdnNFRU5ObjNZdkhfQjlQNVJtaXVKbnJVV29EZUhPLUdiQlptdnhHY0F5bw&q=https%3A%2F%2Fgithub.com%2Fkrakendio%2Fplayground-community&v=ni-rti5DgYY
+
+Video exemplo
+https://www.youtube.com/watch?v=ni-rti5DgYY
