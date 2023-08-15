@@ -224,6 +224,11 @@ find /usr -type p # Dispositivos de pipes
 find /usr -type c # Dispositivos de caracter
 find /usr -type s # Sockets
 find /usr -type l # links simbólicos
+
+find . -atime 2 # Arquivos alterados nos ultimos 2 dias
+find . -amin 2 # Arquivos alterados nos ultimos 2 minutos
+
+find . -size +100M # arquivos maiores que 100MB
 ```
 
 ### free
@@ -346,3 +351,10 @@ apt update ; apt upgrade -y ; echo "Finalizado"
 
 
 
+## Saida de comando em arquivo
+
+```bash
+cat passwd > teste.txt # manda o resultado para o arquivo teste.txt sobreescrevendo o conteudo de teste.txt caso haja algum
+cat passwd >> teste.txt # manda o resultado para o arquivo teste.txt realizando a adição do comando, não sobreescrevendo
+
+```
