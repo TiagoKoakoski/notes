@@ -1,0 +1,8 @@
+<%= @log_path %>/*.log {
+    <%= @rotation_frequency %>
+    rotate <%= @rotation_count %>
+    compress
+    missingok
+    notifempty
+    create <%= @log_permissions %> <%= @log_owner %> <%= @log_group %>
+}

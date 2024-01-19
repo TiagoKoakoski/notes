@@ -6,3 +6,15 @@ node 'your_node_name' {
     proxy_port    => 8080,
   }
 }
+
+node 'seu_nodo' {
+  class { 'logrotate_service':
+    title              => 'kibana',
+    log_path           => '/var/log/kibana/*.log',
+    rotation_frequency => 'daily',
+    rotation_count     => 15,
+    log_owner          => 'kibana',
+    log_group          => 'kibana',
+    log_permissions    => '0640',
+  }
+}
