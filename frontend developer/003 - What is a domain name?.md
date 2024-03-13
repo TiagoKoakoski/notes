@@ -1,0 +1,6 @@
+https://developer.mozilla.org/pt-BR/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name
+
+## Resumo
+"Nomes de Domínios" são uma parte fundamental da infraestrutura da Internet. Eles provêm um endereço legível para qualquer servidor web disponível na Internet.
+
+Qualquer computador conectado na Internet pode ser alcançado através de um endereço IP público, consistido de 32 bits para IPv4 (eles são, normalmente, escritos com quatro grupos de três números entre 0 e 255, separados por pontos (p.e., 173.194.121.32) ou consistidos de 128 bits para IPv6 (eles são normalmente escritos com oito grupos de 4 números hexadecimais, separados por dois pontos (p.e., 2027:0da8:8b73:0000:0000:8a2e:0370:1337). Computadores podem manipular esses endereços facilmente, mas as pessoas tem dificuldade em descobrir quem está executando o servidor ou que serviço o site oferece. Endereços de IP são difíceis de lembrar e podem mudar com o tempo. Para resolver todos esses problemas nós usamos endereços legíveis chamados domain names (nomes de domínio).
